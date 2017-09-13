@@ -1,0 +1,20 @@
+{
+  "name": "workoutlogclient",
+  "description": "client",
+  "main": "index.js",
+  "authors": [
+    "Jared Burris"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jaredburris97/WorkoutLog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
