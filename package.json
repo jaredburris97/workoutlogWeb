@@ -4,12 +4,13 @@
   "description": "client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./node_modules/http-server/bin/http-server"
+    "start": "node ./node_modules/http-server/bin/http-server",
+    "postinstall": "bower install"
   },
   "author": "Jared Burris",
   "license": "ISC",
   "devDependencies": {
+    "bower": "^1.7.9",
     "http-server": "^0.10.0"
   }
 }
