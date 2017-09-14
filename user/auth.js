@@ -97,7 +97,13 @@ $(function(){
 		}
 	}); //end workoutlog
 
-	$("#signup-modal").focus();
+	$("#signup-modal").on("shown.bs.modal", function(){
+		$("#su_username").focus();
+	});
+
+	$("#login-modal").on("shown.bs.modal", function(){
+		$("#li_username").focus();
+	});
 
 	//bind events
 	$("#login").on("click", WorkoutLog.login);
