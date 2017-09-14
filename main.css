@@ -1,3 +1,11 @@
-/*body {
-	background-color: lightgrey;
-}*/
+/*COLORS
+BOOTSTRAP BLUE: BTN PRIMARY #337AB7
+BS DARKER BLUE: 			#2E6DA4
+
+
+*/
+
+body {
+	background-color: #2E6DA4;
+	text-decoration-color: white;
+}
