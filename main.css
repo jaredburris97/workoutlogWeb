@@ -2,16 +2,21 @@
 BOOTSTRAP BLUE: BTN PRIMARY #337AB7
 BS DARKER BLUE: 			#2E6DA4
 BS NAV TAB LINK:			#337AB7
+http://paletton.com/#uid=13z0u0koNvNeZKckhBnuEtsvxmx
 
 */
 
 body {
-	background-color: #2E6DA4;
+	background-color: #4B84B7;
 	color: white;
 }
 
 a {
 	color: white;
+}
+
+li:hover {
+	color: #4B84B7;
 }
 
 h1 {
@@ -24,10 +29,25 @@ h4 {
 }
 
 label {
+	padding: 5px;
 	color: #2E6DA4;
+	background-color: white;
+	border-radius: 25px;
+
+}
+
+label:hover {
+	background-color: #4B84B7;
+	color: white;
 }
 
 input {
+	padding: 10px;
 	width: 50%;
 	color: #2E6DA4;
 }
+
+option {
+	color: #2E6DA4;
+}
+
