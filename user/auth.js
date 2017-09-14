@@ -77,7 +77,7 @@ $(function(){
 					$("#login-modal").modal("hide");
 					$(".disabled").removeClass("disabled");
 					// $("#loginout").text("Logout");
-					$("#loginout").replaceWith("#su_username");
+					$("#loginout").replaceWith($("#su_username"));
 
 					$("#li_username").val("");
 					$("#li_password").val("");
@@ -118,6 +118,6 @@ $(function(){
 	
 
 	if(window.localStorage.getItem("sessionToken")) {
-		$("#loginout").text("Logout");
+		$("#loginout").text("User");
 	}
 }); //end outside function
