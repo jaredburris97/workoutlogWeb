@@ -52,7 +52,7 @@ $(function(){
 	//bind enter key
 	$(document).on("keypress", function(e) {
 		if (e.which === 13) { //enter key
-			if ($("#singup-modal").is(":visible")) {
+			if ($("#signup-modal").is(":visible")) {
 				$("#signup").trigger("click");
 			}
 			if ($("#login-modal").is(":visible")) {

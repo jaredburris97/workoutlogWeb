@@ -13,29 +13,31 @@
 </head>
 
 <body>
-  <ul class="nav nav-tabs">
-
+  <ul class="nav nav-tabs" >
     <a href="#update-log" data-toggle="tab" class="disabled" type="hidden"></a>
 
-    <li><a href="#home" id="loginout" class="disabled" data-toggle="tab">Login</a></li>
-    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-    <li><a href="#define" data-toggle="tab">Define</a></li>
-    <li><a href="#log" data-toggle="tab">Log</a></li>
-    <li><a href="#history" data-toggle="tab">View History</a></li>
-    <li><a href="#" id="testAPI">Test API</a></li>
+    <!-- <li><a href="#home" id="loginout" class="disabled" data-toggle="tab">Login</a></li> -->
+    <li class="active col-md-3"><a href="#home" data-toggle="tab">Home</a></li>
+    <li class="col-md-3"><a href="#define" data-toggle="tab">Define</a></li>
+    <li class="col-md-3"><a href="#log" data-toggle="tab">Log</a></li>
+    <li class="col-md-3"><a href="#history" data-toggle="tab">View History</a></li>
+    <!-- <li><a href="#" id="testAPI">Test API</a></li> -->
+
   </ul>
 
   <div class="container">
     <div class="tab-content">
       <div class="tab-pane active" id="home">
-        <h2>Workout Log!</h2>
-        <div id="forLogin">
-          <button data-toggle="modal" data-target="#login-modal" class="btn btn-primary">Login</button>
-          <button data-toggle="modal" data-target="#signup-modal" class="btn btn-primary">Sign Up</button>
-        </div>
-        <br />
-        <div id="forLogout">
-          <button class="btn btn-primary">Logout</button>
+
+          <h2>Workout Log!</h2>
+          <div id="forLogin">
+            <button data-toggle="modal" data-target="#login-modal" class="btn btn-primary">Login</button>
+            <button data-toggle="modal" data-target="#signup-modal" class="btn btn-primary">Sign Up</button>
+          </div>
+          <br />
+          <div id="forLogout">
+            <button class="btn btn-primary">Logout</button>
+
         </div>
       </div>
 

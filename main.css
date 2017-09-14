@@ -1,11 +1,19 @@
 /*COLORS
 BOOTSTRAP BLUE: BTN PRIMARY #337AB7
 BS DARKER BLUE: 			#2E6DA4
-
+BS NAV TAB LINK:			#337AB7
 
 */
 
 body {
 	background-color: #2E6DA4;
-	text-decoration-color: white;
+	color: white;
+}
+
+a {
+	color: white;
+}
+
+h1 {
+	color: white;
 }
