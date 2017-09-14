@@ -17,3 +17,16 @@ a {
 h1 {
 	color: white;
 }
+
+h4 {
+	color: #2E6DA4;
+	text-align: left;
+}
+
+label {
+	color: #2E6DA4;
+}
+
+input {
+	width: 50%;
+}
