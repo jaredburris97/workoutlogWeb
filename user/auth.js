@@ -93,6 +93,7 @@ $(function(){
 				$("#loginout").text("Login");
 			}
 			//TODO: on logout make sure stuff is disabled
+			$(".tab1").addClass("disabled");
 		}
 	}); //end workoutlog
 
