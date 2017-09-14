@@ -97,12 +97,14 @@ $(function(){
 		}
 	}); //end workoutlog
 
+	$("#signup-modal").focus();
+
 	//bind events
 	$("#login").on("click", WorkoutLog.login);
 	$("#signup").on("click", WorkoutLog.signup);
 	$("#loginout").on("click", WorkoutLog.loginout);
 
-	$("#signup-modal").focus("#su_username");
+	
 
 	if(window.localStorage.getItem("sessionToken")) {
 		$("#loginout").text("Logout");
