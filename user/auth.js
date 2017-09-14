@@ -3,6 +3,7 @@ $(function(){
 
 		signup: function(){								//signup method			
 			console.log("WorkoutLog.signup");
+
 			var username = $("#su_username").val();		//username & password variables
 			var password = $("#su_password").val();			
 			var user = {								//user object
@@ -38,7 +39,6 @@ $(function(){
 				$("#su_username").val("");
 				$("#su_password").val("");
 
-				$('a[href="#define"]').tab('show');		//module 21 wants to add this twice?
 				console.log("Great job signing up!");
 
 			}).fail(function() {
@@ -101,6 +101,8 @@ $(function(){
 	$("#login").on("click", WorkoutLog.login);
 	$("#signup").on("click", WorkoutLog.signup);
 	$("#loginout").on("click", WorkoutLog.loginout);
+
+	$("#signup-modal").focus("#su_username");
 
 	if(window.localStorage.getItem("sessionToken")) {
 		$("#loginout").text("Logout");
