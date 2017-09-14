@@ -76,7 +76,8 @@ $(function(){
 										}
 					$("#login-modal").modal("hide");
 					$(".disabled").removeClass("disabled");
-					$("#loginout").text("Logout");
+					// $("#loginout").text("Logout");
+					$("#loginout").replaceWith("#su_username");
 
 					$("#li_username").val("");
 					$("#li_password").val("");
@@ -94,6 +95,10 @@ $(function(){
 			}
 			//TODO: on logout make sure stuff is disabled
 			$(".tab1").addClass("disabled");
+			//need to clear history, Log list, hide logout button
+			$("#logoutBtn").style.display = 'none';
+
+			console.log("Logged out.")
 		}
 	}); //end workoutlog
 
