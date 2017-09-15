@@ -75,13 +75,18 @@ $(function(){
 					WorkoutLog.log.fetchAll();
 										}
 					$("#login-modal").modal("hide");
-					$(".disabled").removeClass("disabled");
-					// $("#loginout").text("Logout");
-					$("#loginout").val(#su_username);
+					$(".disabled").removeClass("disabled");\
+
+
+					// $("#loginout").text("Logout"); //DISPLAY USERNAME AT TOP
+					$("#userDisplay").val("#li_username");
+
 
 					$("#li_username").val("");
 					$("#li_password").val("");
 					$('a[href="#define"]').tab("show");
+
+					
 
 			}).fail(function() {
 				$("#li_error").text("There was an issue with login").show();
@@ -91,7 +96,7 @@ $(function(){
 		loginout: function() {							//logout method
 			if (window.localStorage.getItem("sessionToken")) {
 				window.localStorage.removeItem("sessionToken");
-				$("#loginout").text("Login");
+				$("#loginout").text("User");
 			}
 			//TODO: on logout make sure stuff is disabled
 			$(".tab1").addClass("disabled");
