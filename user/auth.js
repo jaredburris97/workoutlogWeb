@@ -67,6 +67,12 @@ $(function(){
 				data: JSON.stringify( user ),
 				contentType: "application/json"
 			});
+
+
+			console.log(username);
+			$("#userDisplay").innerHTML(username);
+
+
 			//login done/fail
 			login.done(function(data) {
 				if (data.sessionToken) {
@@ -77,16 +83,11 @@ $(function(){
 					$("#login-modal").modal("hide");
 					$(".disabled").removeClass("disabled");\
 
-
 					// $("#loginout").text("Logout"); //DISPLAY USERNAME AT TOP
-					var username = $("#li_username");
-					$("#userDisplay").val(username);
-
 
 					$("#li_username").val("");
 					$("#li_password").val("");
 					$('a[href="#define"]').tab("show");
-
 					
 
 			}).fail(function() {
