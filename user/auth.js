@@ -77,7 +77,7 @@ $(function(){
 					$("#login-modal").modal("hide");
 					$(".disabled").removeClass("disabled");
 					// $("#loginout").text("Logout");
-					$("#loginout").val("#su_username");
+					$("#loginout").val(#su_username);
 
 					$("#li_username").val("");
 					$("#li_password").val("");
