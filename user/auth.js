@@ -48,9 +48,7 @@ $(function(){
 
 
 		//login method
-		login: function() {
-
-			
+		login: function() {			
 			//login variables
 			var username = $("#li_username").val();
 			var password = $("#li_password").val();
@@ -68,10 +66,8 @@ $(function(){
 				contentType: "application/json"
 			});
 
-
 			console.log(username);
 			$("#userDisplay").innerHTML(username);
-
 
 			//login done/fail
 			login.done(function(data) {
