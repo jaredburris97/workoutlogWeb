@@ -118,6 +118,6 @@ $(function(){
 	
 
 	if(window.localStorage.getItem("sessionToken")) {
-		$("#loginout").text("User");
+		$("#loginout").text(#su_username);
 	}
 }); //end outside function

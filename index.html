@@ -16,11 +16,11 @@
   <ul class="nav nav-tabs" >
     <a href="#update-log" data-toggle="tab" class="disabled" type="hidden"></a>
 
-    <li><a href="#home" id="loginout" class="disabled" data-toggle="tab">Login</a></li>
-    <li class="active col-md-3"><a href="#home" data-toggle="tab">Home</a></li>
-    <li class="col-md-3 tab1"><a href="#define" data-toggle="tab">Define</a></li>
-    <li class="col-md-3 tab1"><a href="#log" data-toggle="tab">Log</a></li>
-    <li class="col-md-3 tab1"><a href="#history" data-toggle="tab">History</a></li>
+    <li><a href="#home" id="loginout" class="disabled" data-toggle="tab">User</a></li>
+    <li class="active col-md-2"><a href="#home" data-toggle="tab">Home</a></li>
+    <li class="col-md-2 tab1"><a href="#define" data-toggle="tab">Define</a></li>
+    <li class="col-md-2 tab1"><a href="#log" data-toggle="tab">Log</a></li>
+    <li class="col-md-2 tab1"><a href="#history" data-toggle="tab">History</a></li>
     <!-- <li><a href="#" id="testAPI">Test API</a></li> -->
 
   </ul>
@@ -30,6 +30,8 @@
       <div class="tab-pane active" id="home">
 
           <h2>Welcome to Workout Log!</h2>
+          <hr />
+          <h3>Click a relative action.</h3>
           <div id="forLogin">
             <button data-toggle="modal" data-target="#login-modal" class="btn btn-primary">Login</button>
             <br />
@@ -47,7 +49,7 @@
 
         <!-- DEFINE -->
       <div class="tab-pane fade" id="define">
-        <h2>Define</h2>
+        <h2>Create a workout.</h2>
         <label for="def-description">Description:</label>
         <br />
         <textarea class="form-control" id="def-description" rows="3"></textarea>
@@ -64,7 +66,7 @@
       </div>
 
     <div class="tab-pane fade" id="log">
-      <h2>Workout Journal (Log entries)</h2>
+      <h2>Write in your workout journal.</h2>
       <label>Result:</label>
       <br />
       <input type="text" class="form-control" id="log-result" />
@@ -95,7 +97,7 @@
     </div>
 
       <div class="tab-pane fade" id="history">
-        <h2>Workout History (Hover over list to view)</h2>
+        <h2>View your workout history (Hover on the list to view).</h2>
         <ul class="list-group" id="history-list">
         </ul>
       </div>
