@@ -79,7 +79,8 @@ $(function(){
 
 
 					// $("#loginout").text("Logout"); //DISPLAY USERNAME AT TOP
-					$("#userDisplay").val("#li_username");
+					var username = $("#li_username");
+					$("#userDisplay").val(username);
 
 
 					$("#li_username").val("");
@@ -99,7 +100,7 @@ $(function(){
 				$("#loginout").text("User");
 			}
 			//TODO: on logout make sure stuff is disabled
-			$(".tab1").addClass("disabled");
+			$(".tab1").hide().addClass("disabled");
 			//need to clear history, Log list, hide logout button
 			$("#logoutBtn").style.display = 'none';
 
